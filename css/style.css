@@ -1,0 +1,61 @@
+/**
+* Author: Fabio Mario Giacomini
+* Description: Accordion - Larghezza 100%, per cambiare le dimensioni agire su accordionDiv
+*              oppure inserire l'accordion in un div con larghezza prefissata 
+* email: info@viarete.it
+*/
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 25px;
+}
+.accordionButton{
+    display: flex;
+    font-weight: 700;
+    background-color: rgb(168, 197, 223);
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px; 
+    margin-top: 10px;
+    border: 0;
+    box-shadow: rgba(50,40,60,.8) 0px 1px 3px 0px;
+    transition: all .1s ease-in-out;
+    position: relative;
+}
+.accordionButton::after{
+    position: absolute;
+    right: 8px;
+    width: 20px;
+    height: 20px;
+    content: '+'; 
+    margin-left: auto;
+    font-size: 18px;
+}
+.accordionButton.open::after{
+    content: '_'; 
+    bottom: 15px;
+}
+.accordionButton:hover{
+    background-color: rgb(128, 164, 195);
+    box-shadow: rgba(50,40,60,.8) 0px 2px 4px 0px;
+}
+.accordionDiv{
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+.accordionContent{
+    display: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 3px;  
+}
+.showContent{
+    display: flex;
+    animation: compari 1s ease-in-out;
+}
+@keyframes compari{
+    from {opacity:0;}
+    to {opacity:1;}
+}

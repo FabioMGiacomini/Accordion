@@ -1,0 +1,15 @@
+  [
+    {
+        "titolo": "Come usare le REST API",
+        "testo" : "this article describes how to use the github rest api using github cli, javascript, or curl. for a quickstart guide, see quickstart for github rest api. when you make a request to the rest api, you will specify an http method and a path. additionally, you might also specify request headers and path, query, or body parameters. the api will return the response status code, response headers, and potentially a response body. the rest api reference documentation describes the http method, path, and parameters for every operation. it also displays example requests and responses for each operation."
+    },
+    {
+        "titolo": "Autenticazione",
+        "testo" : "You can authenticate your request by adding a token. If you want to use the GitHub REST API for personal use, you can create a personal access token. The REST API operations used in this article require repo scope for personal access tokens (classic) or, unless otherwise noted, read-only access to public repositories for fine-grained personal access tokens. Other operations may require different scopes or permissions. For more information about creating a personal access token, see Managing your personal access tokens."
+    },
+    {
+        "titolo": "Documentazione REST API",
+        "testo" : "If you want to use the API on behalf of an organization or another user, GitHub recommends that you use a GitHub App. If an operation is available to GitHub Apps, the REST reference documentation for that operation will say Works with GitHub Apps. The REST API operations used in this article require issues read and write permissions for GitHub Apps. Other operations may require different permissions."
+    }
+]
+ 
